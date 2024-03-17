@@ -9,11 +9,10 @@
 
 /**************************************************************
  * 
- * GET TOTAL PRODUCT SALES          
+ * Wager in Craps game       
  * ____________________________________________________________
- * This program accepts users input to enter product ID and
- * quantity. The program will calculate and return a total
- * cost.
+ * This program accepts users input to enter wager. The program
+ * will start a game of craps.
  * 
  * Calculation is based on this formula:
  * totalCost = quantity * 2.91;
@@ -23,43 +22,23 @@
  * totalCost = quantity * 6.87;
  * ____________________________________________________________
  * INPUT
- *  productID                   : Input numbers for product
- *  quantity                    : Input numbers for quantity
+ *  wager                       : Input numbers for wagering
  * 
  * OUTPUT
- *  totalCost                   : Total cost for all products
+ *  balance                     : Total balance to gamble
  * 
  **************************************************************/
-
-/*
- 5.33 (Craps Game Modification) Modify the craps program of Fig. 5.8 to
-allow wagering. Initialize variable bankBalance to 1000 dollars. Prompt the
-player to enter a wager. Check that wager is less than or equal to
-bankBalance, and if it’s not, have the user reenter wager until a valid wager
-is entered. Then, run one game of craps. If the player wins, increase
-bankBalance by wager and display the new bankBalance. If the player
-loses, decrease bankBalance by wager, display the new bank-Balance,
-check whether bankBalance has become zero and, if so, display the
-message "Sorry. You busted!" As the game progresses, display various
-messages to create some “chatter,” such as "Oh, you're going for
-broke, huh?" or "Aw c'mon, take a chance!" or "You're up big.
-Now's the time to cash in your chips!". Implement the “chatter” as a
-separate method that randomly chooses the string to display.
- */
 
 package assignments;
 
 import java.util.Random;
 import java.util.Scanner;
-// Craps class simulates the dice game craps.
-import java.security.SecureRandom;
 
 public class CrapsGameModification {
+    // create random number genertator
+    private static final Random randomNumbers = new Random();
 
-    // create secure random number generator for use in method rollDice
-    private static final SecureRandom randomNumbers = new SecureRandom();
-
-    // enum type with constants that represent the game status
+    // enum for continue won and lost
     private enum Status {
         CONTINUE, WON, LOST
     };
@@ -71,9 +50,41 @@ public class CrapsGameModification {
     private static final int YO_LEVEN = 11;
     private static final int BOX_CARS = 12;
 
-    // plays one game of craps
-    public static void main(String[] args) {
+    private static int balance; // user balance
+    private static int wager; // wager to bet
 
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        balance = 1000; // Start with a balance of 1000
+
+        do {
+            // Prompt user to enter wager
+            System.out.printf("Current balance is %d%n", balance);
+            System.out.print("Enter wager (-1 to quit): ");
+            wager = input.nextInt();
+
+            if (wager >= 0) {
+                if (wager > balance) {
+                    System.out.println("You don't have enough money!");
+                } else {
+                    play(); // Start play function
+
+                    if (balance <= 0) {
+                        System.out.println("Sorry. You busted!");
+                    } else {
+                        System.out.println(chatter());
+                    }
+                }
+
+                // reset the wager
+                wager = 0;
+                System.out.println();
+            }
+        } while ((wager != -1) && (balance > 0)); // terminate if the user quits or runs out of money
+    }
+
+    // plays one game of craps
+    public static void play() {
         int myPoint = 0; // point if no win or loss on first roll
         Status gameStatus; // can contain CONTINUE, WON or LOST
 
@@ -105,14 +116,19 @@ public class CrapsGameModification {
             if (sumOfDice == myPoint) { // win by making point
                 gameStatus = Status.WON;
             } else {
-                if (sumOfDice == SEVEN) // lose by rolling 7 before point
+                if (sumOfDice == SEVEN) { // lose by rolling 7 before point
                     gameStatus = Status.LOST;
+                }
             }
-            // display won or lost message
-            if (gameStatus == Status.WON) {
-                System.out.println("Player wins");
-            } else
-                System.out.println("Player loses");
+        }
+
+        // display won or lost message and change the balance
+        if (gameStatus == Status.WON) {
+            System.out.println("Player wins");
+            balance += wager; // add wager to balance
+        } else {
+            System.out.println("Player loses");
+            balance -= wager; // subtract wager to balance
         }
 
         System.out.println("\nThank you for using the Casino application.\n" + "Time of calculation is "
@@ -123,15 +139,33 @@ public class CrapsGameModification {
     // roll dice, calculate sum and display results
     public static int rollDice() {
         // pick random die values
-        int die1 = 1 + randomNumbers.nextInt(6); // first die roll
-        int die2 = 1 + randomNumbers.nextInt(6); // second die roll
+        int dice1 = 1 + randomNumbers.nextInt(6); // first die roll
+        int dice2 = 1 + randomNumbers.nextInt(6); // second die roll
 
-        int sum = die1 + die2; // sum of die values
+        int result = dice1 + dice2; // result of dice values
 
         // display results of this roll
-        System.out.printf("Player rolled %d + %d = %d%n", die1, die2, sum);
+        System.out.printf("Player rolled %d + %d = %d%n",
+                dice1, dice2, result);
 
-        return sum;
+        return result;
     }
 
+    // randomly chooses a phrase to respond to the player's action
+    public static String chatter() {
+
+        // Chatter will chat with user if balance is above 0
+        switch (randomNumbers.nextInt(5)) {
+            case 0: // Prompt 1
+                return "Oh, you're going for broke huh?";
+            case 1: // Prompt 2
+                return "Aw cmon, take a chance!";
+            case 2: // Prompt 3
+                return "You're up big. Now's the time to cash in your chips!";
+            case 3: // Prompt 4
+                return "You're way too lucky! ";
+            default: // Prompt default
+                return "I'm betting all my money on you.";
+        }
+    }
 }
