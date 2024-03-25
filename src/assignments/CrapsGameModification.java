@@ -1,4 +1,4 @@
-// Vannara Thong CIS-18A Chapter 5, p.455, #5.33
+// Vannara Thong CIS-18A Chapter 5, p.545, #5.33
 /**************************************************************
  * Programmer Name: Vannara Thong
  * Assignment Start: 03/16/2024 08:15PM
@@ -15,17 +15,14 @@
  * will start a game of craps.
  * 
  * Calculation is based on this formula:
- * totalCost = quantity * 2.91;
- * totalCost = quantity * 4.50;
- * totalCost = quantity * 9.98;
- * totalCost = quantity * 4.49;
- * totalCost = quantity * 6.87;
+ * bankBalance += wager
+ * bankBalance -= wager
  * ____________________________________________________________
  * INPUT
  *  wager                       : Input numbers for wagering
  * 
  * OUTPUT
- *  balance                     : Total balance to gamble
+ *  bankBalance                     : Total balance to gamble
  * 
  **************************************************************/
 
@@ -50,26 +47,26 @@ public class CrapsGameModification {
     private static final int YO_LEVEN = 11;
     private static final int BOX_CARS = 12;
 
-    private static int balance; // user balance
+    private static int bankBalance; // user balance
     private static int wager; // wager to bet
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        balance = 1000; // Start with a balance of 1000
+        bankBalance = 1000; // Start with a balance of 1000
 
         do {
             // Prompt user to enter wager
-            System.out.printf("Current balance is %d%n", balance);
+            System.out.printf("Current balance is %d%n", bankBalance);
             System.out.print("Enter wager (-1 to quit): ");
             wager = input.nextInt();
 
             if (wager >= 0) {
-                if (wager > balance) {
+                if (wager > bankBalance) {
                     System.out.println("You don't have enough money!");
                 } else {
                     play(); // Start play function
 
-                    if (balance <= 0) {
+                    if (bankBalance <= 0) {
                         System.out.println("Sorry. You busted!");
                     } else {
                         System.out.println(chatter());
@@ -80,7 +77,12 @@ public class CrapsGameModification {
                 wager = 0;
                 System.out.println();
             }
-        } while ((wager != -1) && (balance > 0)); // terminate if the user quits or runs out of money
+        } while ((wager != -1) && (bankBalance > 0)); // terminate if the user quits or runs out of money
+
+        // End of the game
+        System.out.println("\nThank you for using the Casino application.\n" + "Time of calculation is "
+                + java.time.LocalDate.now() + " | " + java.time.LocalTime.now());
+        System.exit(0);
     }
 
     // plays one game of craps
@@ -125,15 +127,11 @@ public class CrapsGameModification {
         // display won or lost message and change the balance
         if (gameStatus == Status.WON) {
             System.out.println("Player wins");
-            balance += wager; // add wager to balance
+            bankBalance += wager; // add wager to balance
         } else {
             System.out.println("Player loses");
-            balance -= wager; // subtract wager to balance
+            bankBalance -= wager; // subtract wager to balance
         }
-
-        System.out.println("\nThank you for using the Casino application.\n" + "Time of calculation is "
-                + java.time.LocalDate.now() + " | " + java.time.LocalTime.now());
-        System.exit(0);
     }
 
     // roll dice, calculate sum and display results
