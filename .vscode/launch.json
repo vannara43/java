@@ -1,0 +1,91 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "java_64dd8bef"
+        },
+        {
+            "type": "java",
+            "name": "FormatOutputs",
+            "request": "launch",
+            "mainClass": "FormatOutputs",
+            "projectName": "java_64dd8bef"
+        },
+        {
+            "type": "java",
+            "name": "PrintFile",
+            "request": "launch",
+            "mainClass": "PrintFile",
+            "projectName": "java_64dd8bef"
+        },
+        {
+            "type": "java",
+            "name": "UserInput",
+            "request": "launch",
+            "mainClass": "UserInput",
+            "projectName": "java_64dd8bef"
+        },
+        {
+            "type": "java",
+            "name": "CalculatingSales",
+            "request": "launch",
+            "mainClass": "assignments.CalculatingSales",
+            "projectName": "java_64dd8bef"
+        },
+        {
+            "type": "java",
+            "name": "CrapsGameModification",
+            "request": "launch",
+            "mainClass": "assignments.CrapsGameModification",
+            "projectName": "java_64dd8bef"
+        },
+        {
+            "type": "java",
+            "name": "DiceRolling",
+            "request": "launch",
+            "mainClass": "assignments.DiceRolling",
+            "projectName": "java_64dd8bef"
+        },
+        {
+            "type": "java",
+            "name": "ProgramOne",
+            "request": "launch",
+            "mainClass": "assignments.ProgramOne",
+            "projectName": "java_64dd8bef"
+        },
+        {
+            "type": "java",
+            "name": "ProgramTwo",
+            "request": "launch",
+            "mainClass": "assignments.ProgramTwo",
+            "projectName": "java_64dd8bef"
+        },
+        {
+            "type": "java",
+            "name": "DeckOfCardsTest",
+            "request": "launch",
+            "mainClass": "assignments.program6.DeckOfCardsTest",
+            "projectName": "java_64dd8bef"
+        },
+        {
+            "type": "java",
+            "name": "DeckOfCardsTest(1)",
+            "request": "launch",
+            "mainClass": "ex.DeckOfCardsTest",
+            "projectName": "java_64dd8bef"
+        }
+    ]
+}
