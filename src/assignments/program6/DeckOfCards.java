@@ -123,26 +123,12 @@ public class DeckOfCards {
 
         if (isFlush) {
             System.out.println("This hand is a Flush");
-        } else {
-            System.out.println("This hand is not a Flush");
         }
     }
 
-    // public void straight(Card hand[]) {
-    // boolean isStraight = true;
-    // String lowNumber = hand[0].getFace();
-    // System.out.println("Checking straight...\n");
-    // for (int i = 0; i < hand.length; i++) {
-    // System.out.println(hand[i].getFace());
-    // }
-    // System.out.println("Sorting Card...\n");
-    // for (int i = 0; i < hand.length; i++) {
-    // for (int j = i + 1; j < hand.length; j++) {
-    // if (lowNumber < hand[j].getFace()) {
-
-    // }
-    // }
-    // }
-    // }
-
+    public void fullHouse(int two, int three) {
+        if (two == 2 && three == 3) {
+            System.out.println("The Hand has a Full House!");
+        }
+    }
 }

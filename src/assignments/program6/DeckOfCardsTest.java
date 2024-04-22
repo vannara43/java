@@ -1,17 +1,9 @@
 /*
-(Card Shuffling and Dealing) Modify Fig. 7.13 to deal a five-card
-poker hand. 
-Then modify class DeckOfCards of Fig. 7.12 to include
-methods that determine whether a hand contains
-1. a pair
-2. two pairs
-3. three of a kind (e.g., three jacks)
-4. four of a kind (e.g., four aces)
-5. a flush (i.e., all five cards of the same suit)
-6. a straight (i.e., five cards of consecutive face values)
-7. a full house (i.e., two cards of one face value and three cards of
-another face value)
-[Hint: Add methods getFace and getSuit to class Card of Fig. 7.11.]
+Programmer Name: Vannara Thong
+Assignment Start: 5:00pm
+Assignment Completion: 10:00pm
+Total Hours for Assignment: 5hr
+Comments: I couldn't figure out how to make straight function work
 */
 
 package assignments.program6;
@@ -40,5 +32,6 @@ public class DeckOfCardsTest {
       myDeckOfCards.fourOfAKind(hand);
       myDeckOfCards.flush(hand);
       // myDeckOfCards.straight(hand);
+      myDeckOfCards.fullHouse(two, three);
    }
 }
