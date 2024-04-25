@@ -33,8 +33,8 @@ package assignments;
 import java.util.Scanner;
 import java.time.LocalDate;
 
+@SuppressWarnings({ "unused", "resource" })
 public class ProgramTwo {
-
     public static void main(String[] args) {
         // Variable Declarations
         Scanner input = new Scanner(System.in);

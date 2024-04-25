@@ -31,6 +31,8 @@ package assignments;
 import java.util.Random;
 import java.util.Scanner;
 
+@SuppressWarnings({ "unused", "resource" })
+
 public class CrapsGameModification {
     // create random number genertator
     private static final Random randomNumbers = new Random();

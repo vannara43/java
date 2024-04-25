@@ -2,10 +2,11 @@ import java.util.Scanner;
 
 public class UserInput {
     public static void main(String[] args) {
+        @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
 
         System.out.println("-------------------");
-        System.out.println("-------Input-------");
+        System.out.println("-      Input      -");
         System.out.println("-------------------");
 
         // Input to enter String
@@ -17,7 +18,7 @@ public class UserInput {
         byte inputByte = input.nextByte();
 
         // Input to enter Char
-        System.out.println("Enter a Char");
+        System.out.println("Enter a Char(Enter 1 character)");
         char inputChar = input.next().charAt(0);
 
         // Input to enter Integer
@@ -33,7 +34,7 @@ public class UserInput {
         double inputDouble = input.nextDouble();
 
         // Input to enter Boolean
-        System.out.println("Enter a boolean");
+        System.out.println("Enter a boolean(Enter true or false)");
         boolean inputBoolean = input.nextBoolean();
         System.out.println("-------------------");
         System.out.println("-------result------");

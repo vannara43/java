@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class ProgramOne {
 
     public static void main(String[] args) {
+        @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
         // Prompt for input radius
         System.out.print("Enter the radius: ");

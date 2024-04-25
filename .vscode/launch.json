@@ -6,6 +6,118 @@
   "configurations": [
     {
       "type": "java",
+      "name": "P13StaticVariable",
+      "request": "launch",
+      "mainClass": "P13StaticVariable",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
+      "name": "P12FinalizeKeyword",
+      "request": "launch",
+      "mainClass": "P12FinalizeKeyword",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
+      "name": "Keyword2",
+      "request": "launch",
+      "mainClass": "Keyword2",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
+      "name": "P11FinalKeywordAsMethod",
+      "request": "launch",
+      "mainClass": "P11FinalKeywordAsMethod",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
+      "name": "Hello",
+      "request": "launch",
+      "mainClass": "Hello",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
+      "name": "Employee",
+      "request": "launch",
+      "mainClass": "Employee",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
+      "name": "P9MethodOverriding",
+      "request": "launch",
+      "mainClass": "P9MethodOverriding",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
+      "name": "P8StringOverloading",
+      "request": "launch",
+      "mainClass": "P8StringOverloading",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
+      "name": "P7Overloading",
+      "request": "launch",
+      "mainClass": "P7Overloading",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
+      "name": "P6SwapTwoDifferentValues",
+      "request": "launch",
+      "mainClass": "P6SwapTwoDifferentValues",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
+      "name": "P5DateAndTime",
+      "request": "launch",
+      "mainClass": "P5DateAndTime",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
+      "name": "P4CalculateInput",
+      "request": "launch",
+      "mainClass": "P4CalculateInput",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
+      "name": "P3Arithmetic",
+      "request": "launch",
+      "mainClass": "P3Arithmetic",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
+      "name": "P2PrintWriterFunction",
+      "request": "launch",
+      "mainClass": "P2PrintWriterFunction",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
+      "name": "PrintWriterFunction",
+      "request": "launch",
+      "mainClass": "PrintWriterFunction",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
+      "name": "PrintHelloWorld",
+      "request": "launch",
+      "mainClass": "PrintHelloWorld",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
       "name": "Rectangle",
       "request": "launch",
       "mainClass": "assignments.program7.Rectangle",

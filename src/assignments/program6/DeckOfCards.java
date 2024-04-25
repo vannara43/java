@@ -3,6 +3,7 @@ package assignments.program6;
 import java.security.SecureRandom;
 import java.util.Arrays;
 
+@SuppressWarnings({ "unused", "resource" })
 public class DeckOfCards {
     // random number generator
     private static final SecureRandom randomNumbers = new SecureRandom();
