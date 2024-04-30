@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "P18MatrixAddition",
+      "request": "launch",
+      "mainClass": "P18MatrixAddition",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
+      "name": "P17PrintNumbersMatrixFormat",
+      "request": "launch",
+      "mainClass": "P17PrintNumbersMatrixFormat",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
       "name": "P15SuperClass",
       "request": "launch",
       "mainClass": "P15SuperClass",
