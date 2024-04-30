@@ -1,6 +1,6 @@
 package assignments.program7;
 
-// Vannara Thong CIS-18A Chapter 8, p.639, #6.17
+// Vannara Thong CIS-18A Chapter 8, p.831, #8.4
 /**************************************************************
  * Programmer Name: Vannara Thong
  * Assignment Start: 04/22/2024 07:30PM
@@ -40,7 +40,6 @@ public class Rectangle {
 
     float length = 0;
     float width = 0;
-    Scanner input = new Scanner(System.in);
 
     public static float setLength(float length) {
         Scanner input = new Scanner(System.in);

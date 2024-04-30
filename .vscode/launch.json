@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "P15SuperClass",
+      "request": "launch",
+      "mainClass": "P15SuperClass",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
+      "name": "P14Interface",
+      "request": "launch",
+      "mainClass": "P14Interface",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
       "name": "P13StaticVariable",
       "request": "launch",
       "mainClass": "P13StaticVariable",
