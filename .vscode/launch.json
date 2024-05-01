@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "QuadrilateralInheritance",
+      "request": "launch",
+      "mainClass": "assignments.QuadrilateralInheritance",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
+      "name": "QuadrilateralInheritance",
+      "request": "launch",
+      "mainClass": "QuadrilateralInheritance",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
+      "name": "Quadrilateral",
+      "request": "launch",
+      "mainClass": "Quadrilateral",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
       "name": "P18MatrixAddition",
       "request": "launch",
       "mainClass": "P18MatrixAddition",
