@@ -1,4 +1,4 @@
-package assignments.program6;
+package Assignments.program6;
 
 import java.security.SecureRandom;
 import java.util.Arrays;

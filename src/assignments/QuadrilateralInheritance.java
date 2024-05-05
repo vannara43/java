@@ -1,4 +1,38 @@
-package assignments;
+
+// Vannara Thong CIS-18A Chapter 9, p.831, #8.4
+/**************************************************************
+ * Programmer Name: Vannara Thong
+ * Assignment Start: 04/22/2024 05:00PM
+ * Assignment Completion:03/24/2024 9:00PM
+ * Total Hours for Assignment: 4.0 Hours
+ * Comments:  N/A
+ **************************************************************/
+
+/**************************************************************
+ * 
+ * GET AREA OF ALL SHAPES     
+ * ____________________________________________________________
+ * This program allows the user to get the area and perimeter
+ * of a rectangle. This is done by prompting the user to enter
+ * the length and width of the rectangle. The program then
+ * calculates and displays the area and perimeter using these
+ * values.
+ * 
+ * Calculation is based on this formula:
+ * area = r.length * r.width;
+ * perimeter = 2 * (r.length + r.width);
+ * ____________________________________________________________
+ * INPUT
+ *  input                       : get length and width
+ * 
+ * OUTPUT
+ *  r.length                    : Length of rectangle
+ *  r.width                     : Width of rectangle
+ *  area                        : Total results
+ *  perimeter                   : Total results
+ * 
+ **************************************************************/
+package Assignments;
 
 import java.util.*;
 import java.lang.*;

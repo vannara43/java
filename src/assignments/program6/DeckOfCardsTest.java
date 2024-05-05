@@ -6,7 +6,7 @@ Total Hours for Assignment: 5hr
 Comments: I couldn't figure out how to make straight function work
 */
 
-package assignments.program6;
+package Assignments.program6;
 
 public class DeckOfCardsTest {
    // execute application

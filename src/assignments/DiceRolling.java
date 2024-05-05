@@ -27,7 +27,7 @@
  * 
  **************************************************************/
 
-package assignments;
+package Assignments;
 
 import java.util.Random;
 

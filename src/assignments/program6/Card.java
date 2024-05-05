@@ -1,4 +1,4 @@
-package assignments.program6;
+package Assignments.program6;
 
 public class Card {
     private final String face; // face of card ("Ace", "Deuce", ...)

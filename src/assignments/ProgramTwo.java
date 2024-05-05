@@ -28,7 +28,7 @@
  * Total Hours for Assignment: 2 Hours
  * Comments:  N/A
  **************************************************************/
-package assignments;
+package Assignments;
 
 import java.util.Scanner;
 import java.time.LocalDate;

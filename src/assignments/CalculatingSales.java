@@ -31,7 +31,7 @@
  * 
  **************************************************************/
 
-package assignments;
+package Assignments;
 
 import java.util.Scanner;
 import java.time.LocalDate;

@@ -1,4 +1,4 @@
-package assignments.program7;
+package Assignments.program7;
 
 // Vannara Thong CIS-18A Chapter 8, p.831, #8.4
 /**************************************************************

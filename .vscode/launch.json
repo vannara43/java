@@ -6,6 +6,48 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Printf_Specifiers",
+      "request": "launch",
+      "mainClass": "Practice._DefaultFiles.Printf_Specifiers",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
+      "name": "_1Print",
+      "request": "launch",
+      "mainClass": "Practice.WarmUp._1Print",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
+      "name": "_3Printf",
+      "request": "launch",
+      "mainClass": "Practice.WarmUp._3Printf",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
+      "name": "CalculatingSales",
+      "request": "launch",
+      "mainClass": "Assignments.CalculatingSales",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
+      "name": "Inputs",
+      "request": "launch",
+      "mainClass": "Practice.WarmUp.Inputs",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
+      "name": "display_message",
+      "request": "launch",
+      "mainClass": "Practice.WarmUp.display_message",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
       "name": "QuadrilateralInheritance",
       "request": "launch",
       "mainClass": "assignments.QuadrilateralInheritance",
