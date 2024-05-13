@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "PayrollSystemTest",
+      "request": "launch",
+      "mainClass": "Assignments.program9.PayrollSystemTest",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
+      "name": "PayrollSystemTest",
+      "request": "launch",
+      "mainClass": "Assignments.ex.PayrollSystemTest",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
       "name": "Printf_Specifiers",
       "request": "launch",
       "mainClass": "Practice._DefaultFiles.Printf_Specifiers",

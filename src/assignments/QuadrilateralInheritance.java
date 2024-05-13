@@ -1,9 +1,9 @@
 
-// Vannara Thong CIS-18A Chapter 9, p.831, #8.4
+// Vannara Thong CIS-18A Chapter 9, p.901, #9.8
 /**************************************************************
  * Programmer Name: Vannara Thong
- * Assignment Start: 04/22/2024 05:00PM
- * Assignment Completion:03/24/2024 9:00PM
+ * Assignment Start: 05/02/2024 05:00PM
+ * Assignment Completion:05/02/2024 9:00PM
  * Total Hours for Assignment: 4.0 Hours
  * Comments:  N/A
  **************************************************************/
@@ -37,6 +37,7 @@ package Assignments;
 import java.util.*;
 import java.lang.*;
 
+@SuppressWarnings("unused")
 class Point {
     private double x;
     private double y;
@@ -152,6 +153,7 @@ class Square extends Quadrilateral {
 
 public class QuadrilateralInheritance {
 
+    @SuppressWarnings("resource")
     public static void main(String[] args) {
         // Declare Scanner Variables
         Scanner inputX = new Scanner(System.in);
@@ -231,5 +233,11 @@ public class QuadrilateralInheritance {
             }
             System.out.println();
         }
+
+        // End of program prompt
+        System.out.println("Thank you for using the Quadrilateral application.\n"
+                + "Time of calculation is " + java.time.LocalDate.now() + " | " + java.time.LocalTime.now());
+        // Exit program
+        System.exit(0);
     }
 }
