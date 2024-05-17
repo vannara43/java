@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ExceptionApp",
+      "request": "launch",
+      "mainClass": "Assignments.program10.ExceptionApp",
+      "projectName": "java_64dd8bef"
+    },
+    {
+      "type": "java",
       "name": "PayrollSystemTest",
       "request": "launch",
       "mainClass": "Assignments.program9.PayrollSystemTest",
